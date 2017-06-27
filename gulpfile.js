@@ -1,6 +1,7 @@
 const gulp = require('gulp')
 const babel = require('gulp-babel')
 const sass = require('gulp-sass')
+const concat = require('gulp-concat')
 
 const config = {
 	js: {
@@ -15,6 +16,7 @@ const config = {
 
 gulp.task('js', () => {
 	return gulp.src(config.js.src)
+		.pipe(concat('bundle.js'))
 		.pipe(babel({
 			presets: ['es2015']
 		}))
@@ -28,11 +30,11 @@ gulp.task('sass', () => {
 })
 
 gulp.task('sass:watch', () => {
-	gulp.watch(config.sass.src, ['sass']);
+	gulp.watch(config.sass.src, ['sass'])
 })
 
 gulp.task('js:watch', () => {
-	gulp.watch(config.js.src, ['js']);
+	gulp.watch(config.js.src, ['js'])
 })
 
 gulp.task('default', ['js', 'sass', 'js:watch', 'sass:watch'])
