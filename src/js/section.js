@@ -80,7 +80,15 @@
       else { //up
         $.fn.fullpage.moveSlideLeft();
       }
-    })
+    });
+
+    $('.arrow.left').on("click", function(){
+      $.fn.fullpage.moveSlideLeft();
+    });
+
+    $('.arrow.right').on("click", function(){
+      $.fn.fullpage.moveSlideRight();
+    });
 
   });
 
