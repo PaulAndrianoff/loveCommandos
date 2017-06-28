@@ -52,7 +52,7 @@
       sectionsColor: ['#ccc', '#fff'],
       paddingTop: '1em',
       paddingBottom: '5px',
-      fixedElements: '#header, .footer',
+      fixedElements: '.header, .footer',
       responsiveWidth: 0,
       responsiveHeight: 0,
 
@@ -80,7 +80,15 @@
       else { //up
         $.fn.fullpage.moveSlideLeft();
       }
-    })
+    });
+
+    $('.arrow.left').on("click", function(){
+      $.fn.fullpage.moveSlideLeft();
+    });
+
+    $('.arrow.right').on("click", function(){
+      $.fn.fullpage.moveSlideRight();
+    });
 
   });
 

@@ -1,0 +1,17 @@
+.arrow{
+  position: fixed;
+  width: 100px;
+  height: 100vh;
+  top: 0px;
+  z-index: 10;
+}
+
+.arrow.left
+{
+  left: 0px;
+}
+
+.arrow.right
+{
+  right: 0px;
+}
