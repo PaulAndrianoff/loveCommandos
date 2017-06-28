@@ -1,87 +1,87 @@
-$(document).ready(function () {
+(function($){
 
-  $('#fullpage').fullpage({
-    //Navigation
-    menu: '#menu',
-    lockAnchors: false,
-    anchors: ['firstPage', 'secondPage'],
-    navigation: false,
-    navigationPosition: 'right',
-    navigationTooltips: ['firstSlide', 'secondSlide'],
-    showActiveTooltip: false,
-    slidesNavigation: false,
-    slidesNavPosition: 'bottom',
+  $(document).ready(function () {
 
-    //Scrolling
-    css3: true,
-    scrollingSpeed: 700,
-    autoScrolling: true,
-    fitToSection: true,
-    fitToSectionDelay: 1000,
-    scrollBar: true,
-    easing: 'easeInOutCubic',
-    easingcss3: 'ease',
-    loopBottom: false,
-    loopTop: false,
-    loopHorizontal: false,
-    continuousVertical: false,
-    continuousHorizontal: false,
-    scrollHorizontally: true,
-    interlockedSlides: false,
-    dragAndMove: false,
-    offsetSections: false,
-    resetSliders: false,
-    fadingEffect: false,
-    normalScrollElements: '#element1, .element2',
-    scrollOverflow: true,
-    scrollOverflowReset: false,
-    scrollOverflowOptions: null,
-    touchSensitivity: 15,
-    normalScrollElementTouchThreshold: 1,
-    bigSectionsDestination: null,
+    $('#fullpage').fullpage({
+      //Navigation
+      menu: '#menu',
+      lockAnchors: false,
+      anchors: ['firstPage', 'secondPage'],
+      navigation: false,
+      navigationPosition: 'right',
+      navigationTooltips: ['firstSlide', 'secondSlide'],
+      showActiveTooltip: false,
+      slidesNavigation: false,
+      slidesNavPosition: 'bottom',
 
-    //Accessibility
-    keyboardScrolling: true,
-    animateAnchor: true,
-    recordHistory: true,
+      //Scrolling
+      css3: true,
+      scrollingSpeed: 1000,
+      autoScrolling: true,
+      fitToSection: true,
+      fitToSectionDelay: 1000,
+      scrollBar: true,
+      easing: 'easeInOutCubic',
+      easingcss3: 'ease',
+      loopBottom: false,
+      loopTop: false,
+      loopHorizontal: false,
+      continuousVertical: false,
+      continuousHorizontal: false,
+      interlockedSlides: false,
+      dragAndMove: false,
+      offsetSections: false,
+      resetSliders: false,
+      fadingEffect: false,
+      normalScrollElements: '#element1, .element2',
+      scrollOverflow: true,
+      scrollOverflowReset: false,
+      scrollOverflowOptions: null,
+      touchSensitivity: 15,
+      normalScrollElementTouchThreshold: 1,
+      bigSectionsDestination: null,
 
-    //Design
-    controlArrows: false,
-    verticalCentered: true,
-    sectionsColor: ['#ccc', '#fff'],
-    paddingTop: '1em',
-    paddingBottom: '5px',
-    fixedElements: '#header, .footer',
-    responsiveWidth: 0,
-    responsiveHeight: 0,
-    responsiveSlides: true,
-    parallax: true,
-    parallaxOptions: { type: 'reveal', percentage: 62, property: 'translate' },
+      //Accessibility
+      keyboardScrolling: true,
+      animateAnchor: true,
+      recordHistory: true,
 
-    //Custom selectors
-    sectionSelector: '.section',
-    slideSelector: '.slide',
+      //Design
+      controlArrows: false,
+      verticalCentered: true,
+      sectionsColor: ['#ccc', '#fff'],
+      paddingTop: '1em',
+      paddingBottom: '5px',
+      fixedElements: '#header, .footer',
+      responsiveWidth: 0,
+      responsiveHeight: 0,
 
-    lazyLoading: true,
+      //Custom selectors
+      sectionSelector: '.section',
+      slideSelector: '.slide',
 
-    //events
-    onLeave: function onLeave(index, nextIndex, direction) {},
-    afterLoad: function afterLoad(anchorLink, index) {},
-    afterRender: function afterRender() {},
-    afterResize: function afterResize() {},
-    afterResponsive: function afterResponsive(isResponsive) {},
-    afterSlideLoad: function afterSlideLoad(anchorLink, index, slideAnchor, slideIndex) {},
-    onSlideLeave: function onSlideLeave(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
+      lazyLoading: true,
+
+      //events
+      onLeave: function onLeave(index, nextIndex, direction) { },
+      afterLoad: function afterLoad(anchorLink, index) { },
+      afterRender: function afterRender() { },
+      afterResize: function afterResize() { },
+      afterResponsive: function afterResponsive(isResponsive) { },
+      afterSlideLoad: function afterSlideLoad(anchorLink, index, slideAnchor, slideIndex) { },
+      onSlideLeave: function onSlideLeave(anchorLink, index, slideIndex, direction, nextSlideIndex) { }
+    });
+
+    $('#fullpage').on("wheel", function (e) {
+      if (e.originalEvent.wheelDelta < 0) //dropdown
+      {
+        $.fn.fullpage.moveSlideRight();
+      }
+      else { //up
+        $.fn.fullpage.moveSlideLeft();
+      }
+    })
+
   });
 
-  $('#fullpage').on("wheel", function(e)
-  {
-    if(e.originalEvent.wheelDelta < 0) //dropdown
-    {
-      $.fn.fullpage.moveSlideRight();
-    }
-    else { //up
-      $.fn.fullpage.moveSlideLeft();
-    }
-  })
-});
+})(jQuery)

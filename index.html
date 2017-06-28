@@ -6,22 +6,65 @@
 
   <title>My title</title>
 
+  <link rel="stylesheet" href="dist/css/reset/reset.css" />
   <link rel="stylesheet" href="src/sass/jquery.fullPage.css" />
   <link rel="stylesheet" href="dist/css/main.css" />
 </head>
 <body>
 
+  <header class="header">
+    <div class="burger">
+<svg class="burger_menu" width="35px" height="21px" viewBox="0 0 35 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.301432292">
+          <g id="Page-intro" transform="translate(-36.000000, -35.000000)" fill="#FCFCFC">
+            <g id="menu">
+              <g transform="translate(36.000000, 35.000000)">
+                <rect id="Rectangle" x="0" y="0" width="35" height="4.3400359"></rect>
+                <rect id="Rectangle" x="0" y="16" width="35" height="4.3400359"></rect>
+                <rect id="Rectangle" x="0" y="8" width="35" height="4.3400359"></rect>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </header>
+
   <div id="fullpage">
     <div class="section">
-      <div class="slide" data-anchor="slide1"> Slide 1 </div>
+      <div class="slide" data-anchor="slide1">
+        <div class="container">
+          <div class="inner_container">
+            <p class="intro_text">Today, an average of 300 calls per days is received on the <br> assiociation Love Commandos helpline.</p>
+            <a href="">
+              <div class="get_phone">
+                <svg class="get_phone_icon" width="27px" height="38px" viewBox="0 0 27 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Page-intro" transform="translate(-620.000000, -502.000000)" fill-rule="nonzero" fill="#FF6D00">
+                      <g id="vintage-cellphone">
+                        <g transform="translate(633.500000, 521.500000) rotate(-12.000000) translate(-633.500000, -521.500000) translate(623.000000, 504.000000)">
+                          <path d="M18.043,0 L2.439,0 C1.139,0 0.075,1.063 0.075,2.364 L0.075,9.847 L0.075,24.636 L0.075,32.119 C0.075,33.42 1.139,34.482 2.439,34.482 L18.043,34.482 C19.343,34.482 20.407,33.42 20.407,32.119 L20.407,24.636 L20.407,9.847 L20.407,2.364 C20.407,1.063 19.343,0 18.043,0 Z M5.804,31.76 L3.256,31.76 C2.787,31.76 2.406,31.38 2.406,30.911 C2.406,30.441 2.787,30.06 3.256,30.06 L5.804,30.06 C6.273,30.06 6.654,30.441 6.654,30.911 C6.654,31.38 6.273,31.76 5.804,31.76 Z M5.804,28.52 L3.256,28.52 C2.787,28.52 2.406,28.139 2.406,27.67 C2.406,27.201 2.787,26.82 3.256,26.82 L5.804,26.82 C6.273,26.82 6.654,27.201 6.654,27.67 C6.654,28.139 6.273,28.52 5.804,28.52 Z M5.804,25.28 L3.256,25.28 C2.787,25.28 2.406,24.9 2.406,24.431 C2.406,23.96 2.787,23.58 3.256,23.58 L5.804,23.58 C6.273,23.58 6.654,23.96 6.654,24.431 C6.654,24.9 6.273,25.28 5.804,25.28 Z M5.804,22.041 L3.256,22.041 C2.787,22.041 2.406,21.66 2.406,21.191 C2.406,20.722 2.787,20.34 3.256,20.34 L5.804,20.34 C6.273,20.34 6.654,20.722 6.654,21.191 C6.654,21.66 6.273,22.041 5.804,22.041 Z M11.515,31.76 L8.968,31.76 C8.498,31.76 8.118,31.38 8.118,30.911 C8.118,30.441 8.498,30.06 8.968,30.06 L11.515,30.06 C11.985,30.06 12.365,30.441 12.365,30.911 C12.364,31.38 11.984,31.76 11.515,31.76 Z M11.515,28.52 L8.968,28.52 C8.498,28.52 8.118,28.139 8.118,27.67 C8.118,27.201 8.498,26.82 8.968,26.82 L11.515,26.82 C11.985,26.82 12.365,27.201 12.365,27.67 C12.365,28.139 11.984,28.52 11.515,28.52 Z M11.515,25.28 L8.968,25.28 C8.498,25.28 8.118,24.9 8.118,24.431 C8.118,23.96 8.498,23.58 8.968,23.58 L11.515,23.58 C11.985,23.58 12.365,23.96 12.365,24.431 C12.364,24.9 11.984,25.28 11.515,25.28 Z M11.515,22.041 L8.968,22.041 C8.498,22.041 8.118,21.66 8.118,21.191 C8.118,20.722 8.498,20.34 8.968,20.34 L11.515,20.34 C11.985,20.34 12.365,20.722 12.365,21.191 C12.365,21.66 11.984,22.041 11.515,22.041 Z M17.226,31.76 L14.677,31.76 C14.208,31.76 13.827,31.38 13.827,30.911 C13.827,30.441 14.208,30.06 14.677,30.06 L17.226,30.06 C17.695,30.06 18.076,30.441 18.076,30.911 C18.075,31.38 17.694,31.76 17.226,31.76 Z M17.226,28.52 L14.677,28.52 C14.208,28.52 13.827,28.139 13.827,27.67 C13.827,27.201 14.208,26.82 14.677,26.82 L17.226,26.82 C17.695,26.82 18.076,27.201 18.076,27.67 C18.076,28.139 17.694,28.52 17.226,28.52 Z M17.226,25.28 L14.677,25.28 C14.208,25.28 13.827,24.9 13.827,24.431 C13.827,23.96 14.208,23.58 14.677,23.58 L17.226,23.58 C17.695,23.58 18.076,23.96 18.076,24.431 C18.075,24.9 17.694,25.28 17.226,25.28 Z M17.226,22.041 L14.677,22.041 C14.208,22.041 13.827,21.66 13.827,21.191 C13.827,20.722 14.208,20.34 14.677,20.34 L17.226,20.34 C17.695,20.34 18.076,20.722 18.076,21.191 C18.076,21.66 17.694,22.041 17.226,22.041 Z M18.126,18.38 L2.356,18.38 L2.356,2.771 L18.126,2.771 L18.126,18.38 L18.126,18.38 Z"
+                            id="Shape"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <span class="get_phone_text">Answer the call</span>
+              </div>
+            </a>
+            <div class="disclamer"> Disclaimer : All media in this webdoc have been used in the context of an <br> internal school project at HETIC </div>
+          </div>
+        </div>
+      </div>
       <div class="slide" data-anchor="slide2"> Slide 2 </div>
       <div class="slide" data-anchor="slide3"> Slide 3 </div>
       <div class="slide" data-anchor="slide4"> Slide 4 </div>
     </div>
   </div>
 
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/fullpage.js/dist\jquery.fullpage.extensions.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/fullpage.js/dist/jquery.fullpage.js"></script>
   <script src="dist/js/bundle.js" ></script>
 </body>
 </html>
