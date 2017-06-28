@@ -1,2 +1,17 @@
-@import 'reset/reset'
+.header {
+	width: 100vw;
+	height: 60pt;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	padding-left: 2%;
+	z-index: 2;
+}
 
+.burger_menu {
+	cursor: pointer;
+}
+
+@import 'intro';
