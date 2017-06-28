@@ -1,0 +1,22 @@
+@mixin container($h, $w, $d, $j, $a) {
+	height: $h;
+	width: $w;
+	display: flex;
+	flex-flow: $d;
+	justify-content: $j;
+	align-items: $a;
+}
+
+@mixin font($f, $s, $c, $lh, $ls) {
+	font-family: $f;
+	font-size: $s;
+	color: $c;
+	line-height: $lh;
+	letter-spacing: $ls;
+};
+
+@mixin decorator($w, $h, $b) {
+	height: $h;
+	width: $w;
+	background-color: $b;
+}

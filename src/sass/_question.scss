@@ -1,0 +1,42 @@
+.question_container {
+	@include container(100vh, 100vw, column, center, center);
+	background-color: $black;
+
+	.question_text {
+		width: 80%;
+		@include font($titleFont, $titleSize, $white, $titleSize, 2px);
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.question_buttons {
+		@include container(20vh, 40vw, row, space-around, center);
+
+		.question_button {
+			@include font($bodyFont, $bodySize, $orange, normal, 1px);
+			@include container(62px, 150px, row, center, center);
+			border: 1px solid $orange;
+			border-radius: 5px;
+			transition: all 0.3 ease-in-out;
+			&:hover {
+				cursor: pointer;
+				color: $orangeHover;
+				border: 1px solid $orangeHover;
+			}
+		}
+	}
+
+	.question_result {
+		@include container(30vh, 60vw, column, center, flex-start);
+
+		.question_answer {
+			@include font($bodyFont, $bodySize, $orange, normal, 1px);
+			margin-bottom: $bodySize * 1.5;
+		}
+
+		.question_explain {
+			@include font($bodyFont, $bodySize, $white, normal, 1px);
+			line-height: $bodySize * 1.5;
+		}
+	}
+}

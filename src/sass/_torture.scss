@@ -1,0 +1,4 @@
+.torture_container {
+	@include container(100vh, 100vw, column, center, center);
+	background-color: $black;
+}

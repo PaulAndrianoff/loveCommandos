@@ -65,7 +65,9 @@
       //events
       onLeave: function onLeave(index, nextIndex, direction) { },
       afterLoad: function afterLoad(anchorLink, index) { },
-      afterRender: function afterRender() { },
+      afterRender: function afterRender() { 
+        
+      },
       afterResize: function afterResize() { },
       afterResponsive: function afterResponsive(isResponsive) { },
       afterSlideLoad: function afterSlideLoad(anchorLink, index, slideAnchor, slideIndex) { },

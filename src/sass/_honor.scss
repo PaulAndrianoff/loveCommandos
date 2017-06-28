@@ -1,0 +1,10 @@
+.honor_container {
+	@include container(100vh, 100vw, column, center, center);
+	background-color: $black;
+
+	.honor_text {
+		width: 80%;
+		@include font($titleFont, $titleSize, $white, $titleSize, 2px);
+		font-weight: bold;
+	}
+}
