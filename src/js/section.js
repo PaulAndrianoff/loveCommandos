@@ -52,7 +52,7 @@
       sectionsColor: ['#ccc', '#fff'],
       paddingTop: '1em',
       paddingBottom: '5px',
-      fixedElements: '#header, .footer',
+      fixedElements: '.header, .footer',
       responsiveWidth: 0,
       responsiveHeight: 0,
 

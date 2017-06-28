@@ -5,11 +5,15 @@
 	flex-flow: column nowrap;
 	align-items: center;
 	justify-content: center;
-	background-color: #050505;
 	font-family: 'Lato', sans-serif;
-	.inner_container {
+
+	.margin_10 {
+		margin-top: 10%;
+	}
+
+	.intro_container {
 		height: 50%;
-		width: 70%;
+		width: 80%;
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: space-between;
@@ -17,13 +21,12 @@
 		color: #fefefe;
 		font-size: 32px;
 		line-height: 48px;
-		margin-top: 10%;
 
 		.intro_text {
-			font-family: 'Buntype',sans-serif;
+			font-family: 'Buntype', sans-serif;
 			font-weight: bold;
 		}
-
+		
 		.get_phone {
 			color: #ff6d00;
 			border: 1px solid #ff6d00;
@@ -67,4 +70,84 @@
 			margin-top: 10%;
 		}
 	}
+
+	.choice_container {
+		height: 80%;
+		width: 70%;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-around;
+		align-items: center;
+		color: #fefefe;
+		font-size: 32px;
+		line-height: 48px;
+
+		.first_choice_text {
+			font-family: 'Buntype', sans-serif;
+			font-weight: bold;
+			align-self: flex-start;
+		}
+
+		.choice {
+			color: #ff6d00;
+			font-family: 'Lato', sans-serif;
+			font-style: italic;
+			font-size: 36px;
+			&::before {
+				content: '';
+				width: 150px;
+				height: 2px;
+				display: inline-block;
+				background-color: #ff6d00;
+				margin-right: 10px;
+				margin-left: -60px;
+			}
+		}
+
+		.row {
+
+			width: 80vw;
+			height: 60vh;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: flex-start;
+			padding-left: 7%;
+
+			.card {
+				width: 543px;
+				height: 335px;
+				background: #050505;
+				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+			}
+
+			.second_choice {
+				z-index: 1;
+				margin-left: 10%;
+				align-self: center;
+				&::after {
+					content: '';
+					width: 363px;
+					height: 441px;
+					display: inline-block;
+					position: absolute;
+					background-color: #ff6d00;
+					margin: -3% 0 0 -3%;
+					z-index: -1;
+				}
+			}
+		}
+	}
+
+	.text_black {
+		color: #050505;
+	}
 }
+
+.bg_white {
+	background-color: #fefefe;
+}
+
+.bg_black {
+	background-color: #050505;	
+}
+
