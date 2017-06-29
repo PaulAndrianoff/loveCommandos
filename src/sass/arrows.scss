@@ -15,3 +15,123 @@
 {
   right: 0px;
 }
+
+/********************
+  I
+********************/
+.info
+{
+  position: absolute;
+  width: 25px;
+  top: 10px;
+  right: 10px;
+
+  color: #C8C8C8;
+  border: 1px solid #C8C8C8;
+
+  border-radius: 45px;
+  padding: 5px 10px;
+
+  cursor: pointer;
+
+  -webkit-transition: width 0.3s; /* Safari */
+  transition: width 0.3s;
+}
+
+.info:hover
+{
+  width: auto;
+  background: #C8C8C8;
+  color: #000;
+  text-align: right;
+}
+
+.info.width
+{
+  width: 150px;
+}
+
+.slide
+{
+  position: relative;
+}
+/**********************************************
+
+        VIDEO_CONTROLER
+
+**********************************************/
+.video-controler
+{
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 50px;
+  padding: 10px;
+  z-index: 10;
+}
+
+.container_position_video
+{
+  width: 60%;
+  position: relative;
+  margin: 0px auto;
+}
+/****************
+
+ controls
+
+*****************/
+.video_sound, .video_state
+{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 10px;
+  background: #ff6d00;
+  border-radius: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.video_sound i, .video_state i
+{
+  /*display: inline-block;*/
+  transform: translateX(-10%) translateY(-10%);
+  /*color: green;*/
+}
+
+.time_line_video_container
+{
+  display: inline-block;
+  margin: 0px 10px;
+  width: calc(100% - 100px);
+  height: 5px;
+  border-radius: 10px;
+  background: #888;
+  cursor: pointer;
+}
+
+.time_line_video
+{
+  position: relative;
+  border-radius: 10px;
+  width: 0%;
+  height: 100%;
+  background: #ff6d00;
+  transition: width 0.5 linear;
+}
+
+.time_pos
+{
+  position: absolute;
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50px;
+  background: #fff;
+  top: -150%;
+  right: -10px;
+  transform-origin: center center;
+  /*transform: scaleX(10);*/
+}

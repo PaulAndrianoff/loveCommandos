@@ -7,6 +7,7 @@
   <title>My title</title>
 
   <link rel="stylesheet" href="dist/css/reset/reset.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="src/sass/jquery.fullPage.css" />
   <link rel="stylesheet" href="./node_modules/video.js/dist/video-js.min.css">
   <link rel="stylesheet" href="dist/css/font.css" />
@@ -22,9 +23,25 @@
     <!-- LANDING VIDEO -->
     <div class="slide" data-anchor="slide1">
       <div class="movie_container">
-      <video id="my-player" class="video-js movie_player" controls preload="auto" data-setup='{}'>
+      <video id="my-player" class="video-js movie_player" preload="auto" data-setup='{}'>
         <source src="./assets/movie/C1/trailer.mp4" type="video/mp4"></source>
       </video>
+      <span class="info">i</span>
+
+      <div class="video-controler">
+      <div class="container_position_video">
+        <div class="video_state">
+          <span class="video_play active"><i class="fa fa-play" aria-hidden="true"></i></span>
+          <span class="video_pause hide"><i class="fa fa-pause" aria-hidden="true"></i></span>
+        </div>
+        <div class="time_line_video_container">
+          <div class="time_line_video">
+            <span class="time_pos"></span>
+          </div>
+        </div>
+        <span class="video_sound"><i class="fa fa-volume-up" aria-hidden="true"></i></span>
+      </div>
+    </div>
       </div>
     </div>
     <!-- END LANDING -->
@@ -75,17 +92,17 @@
     </div>
 
     <!-- END TORTURE -->
-    
+
     <!-- HONOR -->
     <div class="slide" data-anchor="slide5">
       <div class="honor_container">
         <p class="honor_text">Even those who apply the law doesn’t really respect it. Lawyers aren’t afraid of going against what they should respect</p>
       </div>
-        <!-- 
+        <!--
         <div class="movie_container">
           <video id="my-player" class="video-js movie_player" controls preload="auto" data-setup='{}'>
             <source src="./assets/movie/C1/avocat.mp4" type="video/mp4"></source>
-          </video> 
+          </video>
         </div>
         -->
     </div>
