@@ -6,7 +6,7 @@
       //Navigation
       menu: '#menu',
       lockAnchors: false,
-      anchors: ['firstPage', 'secondPage'],
+      anchors: ['slide2', 'slide7'],
       navigation: false,
       navigationPosition: 'right',
       navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -68,7 +68,7 @@
       afterRender: function afterRender() { },
       afterResize: function afterResize() { },
       afterResponsive: function afterResponsive(isResponsive) { },
-      afterSlideLoad: function afterSlideLoad(anchorLink, index, slideAnchor, slideIndex) { 
+      afterSlideLoad: function afterSlideLoad(anchorLink, index, slideAnchor, slideIndex) {
         if ( $(this).find('audio').length )
         {
           $(this).find('audio')[0].play()
@@ -98,7 +98,7 @@
     var video = document.querySelector('video')
     video.onended = function() {
       $.fn.fullpage.moveSlideRight();
-    } 
+    }
   });
 
 })(jQuery)
