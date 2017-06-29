@@ -1,15 +1,29 @@
 .conclution_container {
 	@include container(100vh, 100vw, column, center, center);
-	background-color: $black;
+	background-color: $white;
+	color: $black;
 
-	.conclution_title {
-		width: 60%;
-		@include font($titleFont, $titleSize, $orange, normal, 2px);
-		margin-bottom: $titleSize;
+	.conclution_container_row {
+		@include container(50%, 70%, column wrap, flex-start, flex-start);
+
+		.conclution_title {
+			width: 30%;
+			@include font($titleFont, $titleSize, inherit, normal, 2px);
+			font-weight: bold;
+		}
+
+		.separator {
+			@include decorator(3px, 100%, $orange)
+		}
+
+		.conclution_container_text {
+			@include container(100%, 60%, column, center, center);
+
+			.conclution_text {
+				@include font($bodyFont, $bodySize, inherit, $bodySize * 1.7, 2px);
+			}
+		}
+
 	}
 
-	.conclution_text {
-		width: 60%;
-		@include font($bodyFont, $bodySize, $white, $bodySize * 1.7, 2px);
-	}
 }

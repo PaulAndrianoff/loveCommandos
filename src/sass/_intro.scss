@@ -10,7 +10,7 @@
 		width: 80%;
 		@include font($titleFont, $titleSize, $white, $titleSize, 2px);
 		font-weight: bold;
-		margin-bottom: $bodySize;
+		margin-bottom: 10%;
 	}
 	
 	.get_phone {
