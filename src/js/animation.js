@@ -10,6 +10,12 @@ time_line.set_color = "#ff6d00";
 //***************************************************************************
 //***************************************************************************
 
+function gotoSlide(chapter) 
+{
+  if(chapter == "1") $.fn.fullpage.silentMoveTo(1, 1);
+  else if(chapter == "2") $.fn.fullpage.silentMoveTo(1, 7);
+}
+
 // Time line
 
 for(var i = 0; i < time_line.chapter.length; i++)
@@ -44,5 +50,3 @@ for(var i = 0; i < time_line.chapter.length; i++)
     gotoSlide(temp);
   });
 }
-
-temp

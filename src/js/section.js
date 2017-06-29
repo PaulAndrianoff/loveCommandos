@@ -9,7 +9,7 @@
       anchors: ['slide2', 'slide7'],
       navigation: false,
       navigationPosition: 'right',
-      navigationTooltips: ['firstSlide', 'secondSlide'],
+      navigationTooltips: ['firstSlide'],
       showActiveTooltip: false,
       slidesNavigation: false,
       slidesNavPosition: 'bottom',
