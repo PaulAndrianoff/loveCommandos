@@ -26,7 +26,8 @@
   },
   "dependencies": {
     "fullpage.js": "^2.9.4",
-    "jquery": "^3.2.1",
-    "gsap": "^1.19.1"
+    "gsap": "^1.19.1",
+    "iscroll": "^5.2.0",
+    "jquery": "^3.2.1"
   }
 }
