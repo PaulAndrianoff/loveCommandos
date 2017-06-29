@@ -7,12 +7,12 @@ $white: #fbfbf9;
 $grey: #4E4E4E;
 
 // FONTS
-
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 $mainTitleFont: 'Peace sans', sans-serif;
-$titleFont: 'BundaySans', sans-serif;
-$bodyFont: 'Lato', sans-serif;
+$titleFont: 'Helvetica Neue', sans-serif;
+$bodyFont: 'Playfair Display', serif;
 
-$bodySize: 1.25em;
+$bodySize: 1.25rem;
 $titleSize: $bodySize * 2;
 $mainTitleSize: $titleSize * 1.66;
 $smallSize: $bodySize * 0.6;

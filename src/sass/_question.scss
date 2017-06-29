@@ -13,7 +13,7 @@
 		@include container(20vh, 40vw, row, space-around, center);
 
 		.question_button {
-			@include font($bodyFont, $bodySize, $orange, normal, 1px);
+			@include font($titleFont, $bodySize, $orange, normal, 3px);
 			@include container(62px, 150px, row, center, center);
 			border: 1px solid $orange;
 			border-radius: 5px;
@@ -30,13 +30,12 @@
 		@include container(30vh, 60vw, column, center, flex-start);
 
 		.question_answer {
-			@include font($bodyFont, $bodySize, $orange, normal, 1px);
+			@include font($bodyFont, $bodySize, $orange, normal, 2px);
 			margin-bottom: $bodySize * 1.5;
 		}
 
 		.question_explain {
-			@include font($bodyFont, $bodySize, $white, normal, 1px);
-			line-height: $bodySize * 1.5;
+			@include font($bodyFont, $bodySize, $white, $bodySize * 1.7, 2px);
 		}
 	}
 }

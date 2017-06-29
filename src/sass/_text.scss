@@ -1,0 +1,46 @@
+.text_container {
+	@include container(100vh, 100vw, row, center, center);
+	background-color: $white;
+	color: $black;
+
+	.text_content_container {
+		@include container(60%, 60%, column nowrap, center, flex-start);
+		padding-left: 10%;
+
+		.text_title {
+			width: 80%;
+			@include font($titleFont, $titleSize, $orange, normal, 2.5px);
+			margin-bottom: $titleSize;
+			font-weight: bold;
+		}
+
+	}
+
+	.text_content {
+		width: 80%;
+		@include font($bodyFont, $bodySize, inherit, $bodySize * 1.7, 2px);
+	}
+
+	.text_definition {
+		width: 60%;
+		@include font($titleFont, $bodySize, inherit, $bodySize * 1.7, 2px);
+		font-style: italic;
+		margin-bottom: 10%;
+	}
+
+	.text_image {
+		@include container(60%, 40%, column nowrap, center, flex-start);
+		background-image: url('../../assets/img/photo10.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+.row {
+	@include container(100vh, 100vw, column, center, center); 
+}
+
+.black {
+	background-color: $black;
+	color: $white;
+}

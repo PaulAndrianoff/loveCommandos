@@ -1,0 +1,16 @@
+.media_container {
+	@include container(100vh, 100vw, column, center, center);
+	background-color: $black;
+
+	.media_text {
+		width: 60%;
+		@include font($bodyFont, $bodySize, $white, $bodySize * 1.7, 2px);
+		font-weight: bold;
+		margin-bottom: 5%;
+	}
+
+	.media_player {
+		width: 40%;
+		height: 40%;
+	}
+}
