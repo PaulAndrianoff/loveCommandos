@@ -10,10 +10,10 @@ time_line.set_color = "#ff6d00";
 //***************************************************************************
 //***************************************************************************
 
-function gotoSlide(chapter) 
+function gotoSlide(temp)
 {
-  if(chapter == "1") $.fn.fullpage.silentMoveTo(1, 1);
-  else if(chapter == "2") $.fn.fullpage.silentMoveTo(1, 7);
+  if(temp == "1") $.fn.fullpage.silentMoveTo(1, 1);
+  else if(temp == "2") $.fn.fullpage.silentMoveTo(1, 6);
 }
 
 // Time line
