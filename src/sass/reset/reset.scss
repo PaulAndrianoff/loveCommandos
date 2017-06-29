@@ -146,3 +146,18 @@ a {
 * {
 	box-sizing: border-box;
 }
+
+progress[value] {
+	/* Reset the default appearance */
+	-webkit-appearance: none;
+	appearance: none;
+	height: 5px;
+	width: 350px;
+	
+}
+
+progress[value]::-webkit-progress-bar {
+	border-radius: 15px;
+	height: 5px;
+	width: 350px;
+}

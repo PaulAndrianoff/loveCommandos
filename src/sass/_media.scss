@@ -1,6 +1,10 @@
 .media_container {
 	@include container(100vh, 100vw, column, center, center);
 	background-color: $black;
+	background-image: url('../../assets/img/media_bg.svg');
+	background-repeat: no-repeat;
+	background-position-y: 80%;
+	background-size: contain;
 
 	.media_text {
 		width: 60%;
@@ -9,8 +13,24 @@
 		margin-bottom: 5%;
 	}
 
+	.audio_container {
+		@include container(auto, 450px, row, flex-start, center);
+
+		progress[value]::-webkit-progress-value {
+			background-color: $orange;
+			border-radius: 15px;
+		}
+
+
+		.audio_control_time {
+			@include decorator(40px,40px,$orange);
+			border-radius: 50px;
+		}
+	}
+
 	.media_player {
 		width: 40%;
 		height: 40%;
 	}
+
 }
