@@ -4,7 +4,6 @@
 
 	.honor_text {
 		width: 80%;
-		@include font($titleFont, $titleSize, $white, $titleSize, 2px);
-		font-weight: bold;
+		@include font($titleFont, $titleSize, $white, $titleSize * 2, 2px);
 	}
 }
