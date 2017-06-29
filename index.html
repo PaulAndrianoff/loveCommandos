@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./node_modules/video.js/dist/video-js.min.css">
   <link rel="stylesheet" href="dist/css/font.css" />
   <link rel="stylesheet" href="dist/css/arrows.css" />
+  <link rel="stylesheet" href="dist/css/time_line.css" />
   <link rel="stylesheet" href="dist/css/main.css" />
 </head>
 <body>
@@ -269,7 +270,7 @@
     <!-- DATAVIZ -->
     <div class="slide" data-anchor="slide17">
       <div class="data_container">
-        
+
       </div>
     </div>
     <!-- END DATAVIZ -->
@@ -331,13 +332,32 @@
   <div class="arrow left"></div>
   <div class="arrow right"></div>
 
+
+  <div class="time_line_container">
+    <div class="time-line">
+      <span class="chapter ch1" data-key="1"></span>
+      <span class="chapter ch2" data-key="2"></span>
+      <span class="chapter ch3" data-key="3"></span>
+      <span class="chapter ch4" data-key="4"></span>
+      <span class="chapter ch5" data-key="5"></span>
+
+      <span class="chapter-title ch1 hide">Chapter 1</span>
+      <span class="chapter-title ch2 hide">Chapter 2</span>
+      <span class="chapter-title ch3 hide">Chapter 3</span>
+      <span class="chapter-title ch4 hide">Chapter 4</span>
+      <span class="chapter-title ch5 hide">Chapter 5</span>
+
+      <div class="time-line-color"></div>
+    </div>
+  </div>
+
   <script src="node_modules/jquery/dist/jquery.js"></script>
   <script src="node_modules/iscroll/build/iscroll.js"></script>
   <script src="node_modules/video.js/dist/video.js"></script>
   <script src="node_modules/fullpage.js/dist/jquery.fullpage.js"></script>
   <script src="dist/js/bundle.js" ></script>
   <script>
-    var player = videojs('my-player', {}, function onPlayerReady() { 
+    var player = videojs('my-player', {}, function onPlayerReady() {
       this.play();
     });
   </script>
