@@ -44,5 +44,3 @@ for(var i = 0; i < time_line.chapter.length; i++)
     gotoSlide(temp);
   });
 }
-
-temp
