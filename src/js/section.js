@@ -66,7 +66,7 @@
       onLeave: function onLeave(index, nextIndex, direction) { },
       afterLoad: function afterLoad(anchorLink, index) { },
       afterRender: function afterRender() { 
-        
+
       },
       afterResize: function afterResize() { },
       afterResponsive: function afterResponsive(isResponsive) { },
@@ -92,6 +92,10 @@
       $.fn.fullpage.moveSlideRight();
     });
 
+    var video = document.querySelector('video')
+    video.onended = function() {
+      $.fn.fullpage.moveSlideRight();
+    } 
   });
 
 })(jQuery)
